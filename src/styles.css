@@ -52,12 +52,64 @@ header a {
   margin-top: 32px;
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  background-image: linear-gradient(
+      rgba(0, 128, 128, 0.7),
+      rgba(0, 128, 128, 0.7)
+    ),
+    url("/images/santa-monica-footer.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 100px;
+}
+
+footer h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.9;
+  margin-right: 20px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-@media (max-width: 900px) {
+.grid {
+  display: grid;
+  grid-gap: 64px;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
