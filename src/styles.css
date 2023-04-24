@@ -53,9 +53,19 @@ header a {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px;
+}
+
+section.secondary-section {
+  background-color: teal;
+  opacity: 0.8;
+}
+
+section.secondary-section h3,
+section.secondary-section h2 {
+  color: white;
 }
 
 main {
@@ -77,6 +87,22 @@ main h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
+  color: teal;
+  margin: 0;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: teal;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
   color: teal;
   margin: 0;
 }
@@ -147,12 +173,48 @@ footer a {
 
 .grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
+  padding: 0;
 }
 
-.santa-monica-freeway {
-  width: 500px;
-  height: auto;
+.img-responsive {
   max-width: 100%;
+  display: block;
+}
+
+.grid-3-card-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 30px;
+}
+
+.btn {
+  display: block;
+  background-color: teal;
+  opacity: 0.7;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media (max-width: 960px) {
