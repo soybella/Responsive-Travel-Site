@@ -179,6 +179,7 @@ footer a {
 .img-responsive {
   max-width: 100%;
   display: block;
+  aspect-ratio: 1/1;
 }
 
 .grid-3-card-columns {
@@ -190,8 +191,17 @@ footer a {
   margin: 30px 0;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .card-body {
   padding: 30px;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .card-footer {
@@ -241,5 +251,13 @@ footer a {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
