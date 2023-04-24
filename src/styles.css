@@ -55,7 +55,7 @@ header a {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 100px;
+  padding: 100px 30px;
 }
 
 section.secondary-section {
