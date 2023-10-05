@@ -66,6 +66,8 @@ section {
 }
 
 section.secondary-section {
+  /* margin: 0 auto; */
+  /* max-width: 1400px; */
   background-color: teal;
   opacity: 0.8;
 }
@@ -178,7 +180,6 @@ footer a {
   padding: 0;
 }
 .grid-3-gallery-columns {
-  border: 1px solid blue;
   display: flex;
   flex-direction: row;
   max-width: 1400px;
@@ -189,10 +190,10 @@ footer a {
   max-width: 100%;
   display: block;
   border-radius: 7px;
-  aspect-ratio: 1/1;
 }
 
 .grid-3-card-columns {
+  /* max-width: 1400px; */
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -211,7 +212,6 @@ footer a {
 }
 
 .embed {
-  /* width: 100%; */
   padding: 10px;
   margin: 0 auto;
 }
@@ -251,7 +251,14 @@ footer a {
   text-align: center;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
+  .grid-3-card-columns {
+    display: grid;
+    grid-gap: 32px;
+  }
+}
+
+@media (max-width: 992px) {
   header {
     padding: 60px 0;
   }
